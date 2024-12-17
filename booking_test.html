@@ -46,8 +46,8 @@
                     </div>
                     <input type="date" id="return">
                 </div>
-                <button onclick="searchFlights()" class="neumorphic mt-4 px-6 py-2 text-blue-600 font-medium">
-                    Search Flights
+                <button id="wow" class="neumorphic mt-4 px-6 py-2 text-blue-600 font-medium">
+                    Book Flights
                 </button>
             </section>
 
@@ -74,8 +74,7 @@
         </div>
     </div>
 
-    <script >
-        document.getElementById('connectWallet').addEventListener('click', async () => {
+    <script type="module">
     if (typeof window.ethereum !== 'undefined') {
         try {
             // Request account access if needed
@@ -92,7 +91,6 @@
     } else {
         document.getElementById('status').innerText = 'MetaMask is not installed.';
     }
-});
     </script>
 </body>
 </html>
