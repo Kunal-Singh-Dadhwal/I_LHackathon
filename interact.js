@@ -65,10 +65,6 @@ async function interact() {
     });
     console.log("Updated routes:", routes);
   } catch (error) {
-    console.error("Error:", error.message);
-    if (error.receipt) {
-      console.log("Transaction receipt:", error.receipt);
-    }
   }
 }
 
